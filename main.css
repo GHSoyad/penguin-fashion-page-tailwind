@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {}
+@layer base {
+    h3 {
+        @apply text-3xl;
+    }
+}
