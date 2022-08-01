@@ -6,22 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a07fa28a3e.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="main.css">
+
+    <!-- FlowBite components css -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
 </head>
 
 <body class="text-slate-800">
 
     <!-- Navbar -->
+
     <nav>
-        <div class="container mx-auto max-w-6xl flex justify-between items-center font-bold my-7">
+        <div
+            class="container mx-auto max-w-6xl flex flex-wrap justify-between items-center font-bold my-4 lg:my-7 px-4 xl:px-0">
             <div>
                 <h3 class="text-3xl"><span class="text-lime-600">Penguin</span> Fashion</h3>
             </div>
-            <div>
-                <ul class="flex gap-10">
-                    <li><a href="#" class="hover:text-lime-600">Home</a></li>
+            <button data-collapse-toggle="navbar-default2" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default2">
+                <ul class="flex flex-col md:flex-row mt-4 gap-4 md:gap-10 lg:mt-0">
+                    <li><a href="#" class="text-lime-600">Home</a></li>
                     <li><a href="#" class="hover:text-lime-600">Products</a></li>
                     <li><a href="#" class="hover:text-lime-600">About</a></li>
                     <li><a href="#" class="hover:text-lime-600">Contact</a></li>
@@ -49,6 +69,9 @@
     </header>
     <main></main>
     <footer></footer>
+
+    <!-- FlowBite components script -->
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
 
 </html>
