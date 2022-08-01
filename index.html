@@ -45,7 +45,7 @@
                     <li><a href="#women" class="hover:text-lime-600">Women</a></li>
                     <li><a href="#men" class="hover:text-lime-600">Men</a></li>
                     <li><a href="#about" class="hover:text-lime-600">About</a></li>
-                    <li><a href="#" class="hover:text-lime-600">Contact</a></li>
+                    <li><a href="#contact" class="hover:text-lime-600">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -190,25 +190,25 @@
 
         <!-- Contact section -->
         <section id="contact"
-            class="container mx-auto max-w-6xl px-4 xl:px-0 pt-8 my-24 flex flex-col md:flex-row items-center gap-6">
-            <div class="w-full md:w-1/2">
+            class="container mx-auto max-w-6xl px-4 xl:px-0 pt-8 my-24 flex flex-col md:flex-row justify-center items-center gap-6">
+            <div class="w-full md:w-2/5 pr-16">
                 <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
                 <p>Send us a message or call us directly.</p>
                 <p class="my-4"><span class="font-bold">Address: </span>Concourse Level, Petronas Twin Tower, Lower
-                    Ground,<br> Kuala Lumpur City Centre.</p>
+                    Ground, Kuala Lumpur City Centre.</p>
                 <p><span class="font-bold">Phone: </span>011-xxx-xxxxx</p>
             </div>
-            <div class="w-full md:w-1/2 mt-4 md:mt-0">
+            <div class="w-full md:w-2/5 mt-4 md:mt-0">
                 <form>
+                    <div class="mb-4">
+                        <label for="name" class="block mb-2 text-sm font-medium">Your name</label>
+                        <input type="text" id="name"
+                            class="block p-2.5 w-full bg-gray-50 rounded-lg border border-gray-300  focus:ring-0 focus:border-lime-600"
+                            required="">
+                    </div>
                     <div class="mb-4">
                         <label for="email" class="block mb-2 text-sm font-medium">Your email</label>
                         <input type="email" id="email"
-                            class="block p-2.5 w-full bg-gray-50 rounded-lg border border-gray-300  focus:ring-0 focus:border-lime-600"
-                            placeholder="name@flowbite.com" required="">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="block mb-2 text-sm font-medium">Your password</label>
-                        <input type="password" id="password"
                             class="block p-2.5 w-full bg-gray-50 rounded-lg border border-gray-300  focus:ring-0 focus:border-lime-600"
                             required="">
                     </div>
@@ -223,9 +223,12 @@
                 </form>
             </div>
         </section>
-
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer class="w-full bg-amber-100 text-center py-10">
+        <p>© 2022 Golam Hasnain Soyad</p>
+    </footer>
 
     <!-- FlowBite components script -->
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
